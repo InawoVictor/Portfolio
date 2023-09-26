@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 
 const useHeaderShadow = () => {
 const [headerShadow, setHeaderShadow] = useState(false)
-  //to handle shadow of header
+  
+//Handle nav shadow
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY > 0) {
-        setHeaderShadow(" 1px solid grey ")
+        setHeaderShadow(" 1px solid grey")
       } else {
         setHeaderShadow("none");
       }
